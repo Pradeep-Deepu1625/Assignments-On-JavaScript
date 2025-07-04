@@ -116,3 +116,94 @@ while(i<=24){
     }
     i++
 }
+
+
+// Write a program to print 1 to 10 numbers using a for loop
+for(let i=1; i<=10;i++){
+    console.log(i)
+}
+
+
+// Write a program to print 10 to 1 numbers using a for loop
+for(let i=10;i>0;i--){
+    console.log(i)
+}
+
+
+
+// Write a program to print all numbers from 1 to a given number
+function toPrintToaParticularNum(num){
+    for(let i=1;i<=num;i++){
+        console.log(i)
+    }
+}
+toPrintToaParticularNum(5)
+
+
+
+// Write a program to print 1 to 10 even numbers using a for loop
+for(let i=1;i<=10;i++){
+    i%2 === 0 ? console.log(i) :null
+}
+
+
+// Write a program to print 1 to 10 odd numbers using a for loop
+for(let i =1;i<=10;i++){
+    i % 2 !== 0 ? console.log(i) : null
+}
+
+
+
+// Write a program to print first 10 multiples of 3 using a for loop
+for(let i = 1; i <= 10;i++){
+    console.log(i * 3)
+}
+
+
+
+// Write a program to print multiplication table of 6 using a for loop
+for(let i = 1;i<=10;i++){
+    console.log(`6 X ${i} = ${6 * i}`)
+}
+
+
+
+// Write a program to print all the factors of a given number
+function factorsOfANum(num){
+    for(let i =1;i<=num;i++){
+        num % i === 0 ? console.log(i) : null
+    }
+}
+factorsOfANum(8)
+
+
+
+// a program to read 5 numbers and print the maximum and minimum number
+function maxAndMinOfFiveNums(num1,num2,num3,num4,num5){
+    let max = num1;
+    let min = num2;
+    let nums = [num1,num2,num3,num4,num5]
+    for(let i=0;i<nums.length;i++){
+        nums[i] > max ? max = nums[i] : null
+        nums[i] < min ? min = nums[i] : null
+    }
+    console.log(max,min)
+}
+maxAndMinOfFiveNums(1,2,3,4,5)
+
+function maxAndMinOfFiveNums(num1, num2, num3, num4, num5) {
+    let nums = [num1, num2, num3, num4, num5];
+    let max = nums[0];
+    let min = nums[0];
+
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] > max) max = nums[i];
+        if (nums[i] < min) min = nums[i];
+    }
+
+    console.log("Maximum:", max);
+    console.log("Minimum:", min);
+}
+
+// Example usage
+maxAndMinOfFiveNums(1, 2, 3, 4, 5); // Output: Maximum: 5, Minimum: 1
