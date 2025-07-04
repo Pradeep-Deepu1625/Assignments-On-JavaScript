@@ -841,4 +841,4 @@ console.log(Math.max(25,7,2002),"Using math Method") // Using math Method
 
 // Write a script to display the given two strings in ascending order using operators
 const stringsInascendingOrder = (str1,str2) => str1 > str2 ? [str1,str2] : [str2,str1];
-console.log(stringsInascendingOrder("Deepu","Deepua"))
+console.log(stringsInascendingOrder("Deepu","Deepa"))

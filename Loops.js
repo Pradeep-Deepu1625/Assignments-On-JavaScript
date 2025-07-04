@@ -106,4 +106,13 @@ while(i<=10){
 }
 
 
-// Write a program to print factors of 24 using while loop (factors of 24 are 1,2,3,4,6,8,12,24)
+// Write a program to print factors of 24 using while loop (factors of 24 are 1,2,3,4,6,8,12,24)var 
+
+
+var i=1;
+while(i<=24){
+    if(24 % i === 0){
+        console.log(i)
+    }
+    i++
+}

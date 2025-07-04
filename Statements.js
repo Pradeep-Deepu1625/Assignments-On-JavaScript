@@ -25,7 +25,7 @@ function checkFactorOf96(num){
     }else if(96 % num === 0){
         console.log(`${num} is factor 96`)
     }else{
-        console.log(`${num} is not factor of 96`)
+        console.log(`${num} is not factor to 96`)
     }
 }
 
